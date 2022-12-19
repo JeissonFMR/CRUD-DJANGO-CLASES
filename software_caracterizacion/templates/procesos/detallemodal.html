@@ -1,0 +1,88 @@
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Detalle del proceso</h2>
+      <button class="btn btn-danger" type="button" data-dismiss="modal">
+        X
+      </button>
+    </div>
+
+    <form action="" method="POST" class="formdet">
+      <div class="modal-body">
+        <div class="container">
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-sm-8 fecha_hor">
+                Fecha de creación: {{proceso.fec_pro}}
+              </div>
+              <div class="col-sm-4 fecha_hor">
+                Hora de creación: {{proceso.hor_pro}}
+              </div>
+            </div>
+          </div>
+          <br />
+          <!-- tabla -->
+          <table class="table table-bordered border-primary">
+            <tbody>
+              <tr>
+                <th>Identificador: {{proceso.id}}</th>
+                <!-- <td>Nombre: {{proceso.nom_pro}}</td> -->
+                <td>Responsbale: {{proceso.res_pro}}</td>
+              </tr>
+              <tr>
+                <td>Cliente: {{proceso.cli_pro}}</td>
+                <td>Pregunta: {{proceso.pre_pro}}</td>
+                <!-- <td>Objetivo: {{proceso.obj_pro}}</td>
+                <td>Alcance: {{proceso.alc_pro}}</td> -->
+              </tr>
+              <tr>
+                <!-- <td>Documentos asociados: {{proceso.dca_pro}}</td> -->
+                <!-- <td>Proveedores: {{proceso.pro_pro}}</td> -->
+                <td>Respuesta: {{proceso.rep_pro}}</td>
+                <td>Programa: {{proceso.pro_pro}}</td>
+              </tr>
+              <tr>
+                <td>Tipo de proceso: {{proceso.tip_pro}}</td>
+                <td>Documentos: {{proceso.doc_pro}}</td>
+                <!-- <td>Indicadores: {{proceso.ent_pro}}</td>
+                <td>Recursos: {{proceso.cli_pro}}</td> -->
+                <!-- <td>
+                  Requisitos legales y reglamentarios: {{proceso.act_pro}}
+                </td> -->
+              </tr>
+            </tbody>
+          </table>
+          <!-- tablafin -->
+        </div>
+        <a
+          href="automatizacion_proceso/{{proceso.id}}"
+          role="button"
+          class="btn btn-sm"
+          id="btn-detalles_modal"
+          title="Generar reporte"
+        >
+          Automatizar proceso
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-journal-bookmark-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"
+            />
+            <path
+              d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+            />
+            <path
+              d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+            />
+          </svg>
+        </a>
+      </div>
+    </form>
+  </div>
+</div>

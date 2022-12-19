@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body{
+
+    background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%) no-repeat center center fixed;
+
+}
+
+
+/* .alert-warning{
+    background: #ad333a;
+} */
+
+.bi-person-fill{
+    font-size: 22px;
+}
+.bi-lock-fill{
+    font-size: 22px;
+}
+.test{
+    width: 10px;
+    height: 10px;
+}
+.nombre_adel{
+    letter-spacing: 5px;
+    
+}
+.change_password{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+.logo_cesmag{
+    width: 75px;
+    height: 75px;
+    margin-left: 5px;
+    position: absolute;
+
+}
+
+/* From uiverse.io by @adamgiebl */
+button {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 15px;
+    font-family: inherit;
+    color: #fff;
+    width: 9.5em;
+    height: 2.5em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 40px 5px;
+    z-index: 1;
+    margin-left: 25%;
+   }
+   
+
+   button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+    
+   }
+   
+   @keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+   
+   button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 40px 5px;
+    transition: 1s;
+   }
+   
+   button:hover::before {
+    filter: blur(20px);
+   }
+   
+   button:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   }
+
+.form-label{
+    color: black;
+}
+.sistema{
+    color: grey;
+    font-size: 37px;
+    
+}
+/* From uiverse.io by @alexruix */
+/* From uiverse.io by @alexruix */
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: black;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #8970C9;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }  
+   
+   .input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #ffffff;
+   }
+   
+   .input::placeholder {
+    color: #777;
+   }
+   
+   .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+
+.blur{
+    box-shadow: 20px 10px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.icono{
+    height: 35%;
+    width: 35%;
+    /* margin-left: 45%; */
+    margin: auto;
+}
+
+.totallog{
+    background: #ffffff70;
+    backdrop-filter: blur(12px);
+    border-color: rgba(0, 0, 0, 0.411);
+}
+hr{
+    color: rgb(0, 0, 0);
+    
+}
+

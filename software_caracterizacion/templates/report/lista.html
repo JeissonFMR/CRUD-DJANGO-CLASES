@@ -1,0 +1,39 @@
+<div class="centerPdf">Universidad CESMAG</div>
+<div class="centerPdf">Chatbot ADEL</div>
+<div class="centerPdf">Caracterización de procesos</div>
+<table >
+  <style type="text/css">
+      table { border: 1px solid black;
+          text-align: center;
+      }
+      th { height: 50px;}
+      .centerPdf{
+        text-align: center;
+      }
+    </style>
+  <thead>
+    <tr>
+      <th>Identificador</th>
+      <th>Nombre</th>
+      <th>Responsable</th>
+      <th>Cliente</th>
+      <th>Automatizar</th>
+      <th>Fecha de creación</th>
+      <th>Hora de creación</th>
+    </tr>
+  </thead>
+  {% for proceso in procesos %}
+  <tbody>
+      
+    <tr>
+      <th>{{proceso.idp_pro}}</th>
+      <td>{{proceso.nom_pro}}</td>
+      <td>{{proceso.res_pro}}</td>
+      <td>{{proceso.cli_pro}}</td>
+      <td>{{proceso.aut_pro}}</td>
+      <td>{{proceso.fec_pro}}</td>
+      <td>{{proceso.hor_pro}}</td>
+    </tr>
+  </tbody> 
+  {% endfor %} <hr>
+</table>
